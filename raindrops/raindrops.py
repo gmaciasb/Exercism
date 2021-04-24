@@ -1,4 +1,4 @@
 def convert(number):
-    words = {3: "Pling", 5: "Plang", 7: "Plong"}
-    result = "".join(words[num] for num in words if number % num == 0)
+    word = {3: "Pling", 5: "Plang", 7: "Plong"}
+    result = "".join(word[num] for num in word if number % num == 0)
     return result or str(number)
